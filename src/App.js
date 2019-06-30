@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet'
-import Navigation from './components/landing/Navigation'
+import LandingPage from '../src/pages/LandingPage'
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
           <meta name="keywords" content="kon, tiki, kon-tiki, greenport, restaurant, bar, gallery hotel, gallery, hotel" />
         </Helmet>
 
-      <Navigation/>
+      <LandingPage/>
 
       </div>
     );

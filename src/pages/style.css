@@ -1,0 +1,9 @@
+.landing-page {
+  background-color: black;
+  height: 100vh;
+}
+
+.landing-flex {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
