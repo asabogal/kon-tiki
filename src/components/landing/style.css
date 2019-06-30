@@ -1,0 +1,12 @@
+.navigation {
+  display: inline-flex;
+  flex-direction: column;
+  font-size: 90px;
+  padding: 10px;
+  width: 100%;
+  color: rgb(235, 20, 206);
+}
+
+.nav-links {
+  margin: -10px;
+}
