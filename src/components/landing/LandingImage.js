@@ -1,5 +1,6 @@
 import React from 'react';
-import gif from '../../resources/images/kt_gif.gif'
+import './style.css'
+import gif from '../../resources/images/kt_gif edit.gif'
 
 const LandingImage = () => {
   return (

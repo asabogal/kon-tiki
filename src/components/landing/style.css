@@ -2,25 +2,24 @@
   display: flex;
   flex-direction: column;
   font-size: 90px;
-  padding: 30px 100px;
   width: 100%;
   color: #f97dbab3;
 }
 
-.img-container {
-  display: flex;
-  align-items: flex-start;
-}
+/* .img-container {
+  display: grid;
+  grid-template-columns: 100%;
+  margin: 0 auto;
+} */
+
 .landing-img {
-  width: 950px;
-  padding: 0 50px;
+  margin: 0 auto;
 }
 
 .landing-header {
   display: flex;
   justify-content: flex-end;
-  /* border: 2px solid red; */
   padding-top: 10px;
-  padding-right: 60px;
-  opacity: 0.9;
+  padding-right: 100px;
+  opacity: 0.8;
 }

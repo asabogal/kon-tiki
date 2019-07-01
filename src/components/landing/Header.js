@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css'
 import instagram from '../../resources/icons/instagram.png'
 import facebook from '../../resources/icons/facebook.png'
 import twitter from '../../resources/icons/twitter.png'
