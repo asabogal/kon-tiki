@@ -9,7 +9,7 @@ class LandingPage extends Component {
     return (
       <div className="landing-page">
         <Header/> 
-        <div className="landing-flex">
+        <div className="landing-grid">
           <Navigation/>
           <LandingImage/>
         </div>
