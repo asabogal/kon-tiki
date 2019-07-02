@@ -1,19 +1,70 @@
 .navigation {
   display: flex;
   flex-direction: column;
-  font-size: 90px;
+  font-size: 80px;
   width: 100%;
-  color: #f97dbab3;
+  color: #c26091de;
 }
 
-/* .img-container {
-  display: grid;
-  grid-template-columns: 100%;
-  margin: 0 auto;
-} */
+.landing-home {
+  opacity: 0;
+  animation: 1s ease 1s forwards;
+  animation-name: fadeIn;
+  animation-delay: 2s;
+}
+
+.landing-menu {
+  opacity: 0;
+  animation: 1s ease 1s forwards;
+  animation-name: fadeIn;
+  animation-delay: 2.2s;
+}
+
+.landing-reserve {
+  opacity: 0;
+  animation: 1s ease 1s forwards;
+  animation-name: fadeIn;
+  animation-delay: 2.4s;
+}
+
+.landing-contact {
+  opacity: 0;
+  animation: 1s ease 1s forwards;
+  animation-name: fadeIn;
+  animation-delay: 2.6s;
+}
+
+.navigation div:hover{
+  color: rgb(28, 176, 196);
+}
+
+@keyframes fadeIn {
+  0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
 
 .landing-img {
+  position: relative;
+  left: -200px;
   margin: 0 auto;
+  animation: move 1s ease forwards;
+  animation-delay: 1.5s;
+  -webkit-animation: move 1s ease forwards;
+  -webkit-animation-delay: 1.5s;
+}
+
+@keyframes move {
+  from {left: -200px}
+  to {left: 0px}
+}
+
+@-webkit-keyframes move {
+  from {left: -200px}
+  to {left: 0px}
 }
 
 .landing-header {
@@ -21,5 +72,24 @@
   justify-content: flex-end;
   padding-top: 10px;
   padding-right: 100px;
+  opacity: 0;
+  animation: 1s ease 1s forwards;
+  animation-name: fadeDown;
+  animation-delay: 2s;
+  transform: translateY(20%);
+}
+
+.landing-header a {
   opacity: 0.8;
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(20%);
+  }
 }
