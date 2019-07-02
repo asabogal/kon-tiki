@@ -73,6 +73,16 @@
   to {left: 0px}
 }
 
+@keyframes move2 {
+  from {left: -100px}
+  to {left: 0px}
+}
+
+@-webkit-keyframes move2 {
+  from {left: -100px}
+  to {left: 0px}
+}
+
 .landing-header {
   display: flex;
   justify-content: flex-end;
@@ -97,5 +107,116 @@
   100% {
     opacity: 1;
     transform: translateY(20%);
+  }
+}
+
+@media (max-width: 1200px) {
+  .navigation {
+    font-size: 75px;
+  }
+  .landing-img {
+    width: 550px;
+  }
+}
+
+@media (max-width: 1030px) {
+  .navigation {
+    font-size: 65px;
+  }
+  .landing-img {
+    width: 500px;
+  }
+}
+
+@media (max-width: 930px) {
+  .navigation {
+    font-size: 62px;
+  }
+  .landing-img {
+    width: 480px;
+    left: -120px;
+    animation: move2 1s ease forwards;
+    animation-delay: 1.5s;
+    -webkit-animation: move2 1s ease forwards;
+    -webkit-animation-delay: 1.5s;
+  }
+
+  @keyframes move2 {
+    from {left: -120px}
+    to {left: 0px}
+  }
+  
+  @-webkit-keyframes move2 {
+    from {left: -120px}
+    to {left: 0px}
+  }
+}
+
+@media (max-width: 910px) {
+  .navigation {
+    font-size: 60px;
+  }
+  .landing-img {
+    width: 450px;
+    left: -120px;
+    animation: move2 1s ease forwards;
+    animation-delay: 1.5s;
+    -webkit-animation: move2 1s ease forwards;
+    -webkit-animation-delay: 1.5s;
+  }
+
+  @keyframes move2 {
+    from {left: -120px}
+    to {left: 0px}
+  }
+  
+  @-webkit-keyframes move2 {
+    from {left: -120px}
+    to {left: 0px}
+  }
+}
+
+@media (max-width: 880px) {
+  .navigation {
+    display: none;
+  }
+
+  .landing-img {
+    animation: none;
+    left: 0;
+    width: 400px;
+  }
+}
+
+@media (max-width: 530px) {
+  .navigation {
+    display: none;
+  }
+
+  .landing-img {
+    animation: none;
+    left: 0;
+    width: 350px;
+    height: 350px;
+  }
+
+  .landing-header {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .navigation {
+    display: none;
+  }
+
+  .landing-img {
+    animation: none;
+    width: 250px;
+    height: 250px;
+  }
+
+  .landing-header {
+    padding: 0 30px;
   }
 }
