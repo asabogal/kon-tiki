@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import BugerButton from '../navigation/BugerButton'
+import MobileMenu from '../navigation/MobileMenu'
+import Navigation from './Navigation'
 import './style.css'
 import instagram from '../../resources/icons/instagram.png'
 import facebook from '../../resources/icons/facebook.png'
@@ -10,7 +13,13 @@ class Header extends Component {
     this.state = { isOpen: false };
   }
 
-  renderIcons = () => {
+  toggle = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    })
+  }
+
+  renderSocial = () => {
     return (
       <div>
         <a href="https://www.instagram.com/kontiki.gp/">
@@ -28,10 +37,15 @@ class Header extends Component {
     )
   }
 
+  renderMenu = () => {
+    return this.state.isOpen ? <MobileMenu toggle={this.toggle} content={<Navigation/>}/> : <BugerButton toggle={this.toggle}/>
+  }
+
   render() {
     return (
       <div className="landing-header">    
-        {this.renderIcons()}
+        {this.renderMenu()}
+        {this.renderSocial()}
       </div>  
     );
   }
