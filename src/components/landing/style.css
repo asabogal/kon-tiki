@@ -204,6 +204,34 @@
   .landing-header {
     justify-content: space-between;
   }
+
+  .landing-home {
+    opacity: 0;
+    animation: 1s ease 1s forwards;
+    animation-name: fadeIn;
+    animation-delay: .4s;
+  }
+  
+  .landing-menu {
+    opacity: 0;
+    animation: 1s ease 1s forwards;
+    animation-name: fadeIn;
+    animation-delay: .5s;
+  }
+  
+  .landing-reserve {
+    opacity: 0;
+    animation: 1s ease 1s forwards;
+    animation-name: fadeIn;
+    animation-delay: .6s;
+  }
+  
+  .landing-contact {
+    opacity: 0;
+    animation: 1s ease 1s forwards;
+    animation-name: fadeIn;
+    animation-delay: .7s;
+  }
 }
 
 @media (max-width: 530px) {
@@ -226,6 +254,34 @@
     padding-right: 50px;
     justify-content: space-between;
   }
+
+  .landing-home {
+    opacity: 0;
+    animation: 1s ease 1s forwards;
+    animation-name: fadeIn;
+    animation-delay: .4s;
+  }
+  
+  .landing-menu {
+    opacity: 0;
+    animation: 1s ease 1s forwards;
+    animation-name: fadeIn;
+    animation-delay: .5s;
+  }
+  
+  .landing-reserve {
+    opacity: 0;
+    animation: 1s ease 1s forwards;
+    animation-name: fadeIn;
+    animation-delay: .6s;
+  }
+  
+  .landing-contact {
+    opacity: 0;
+    animation: 1s ease 1s forwards;
+    animation-name: fadeIn;
+    animation-delay: .7s;
+  }
 }
 
 @media (max-width: 450px) {
@@ -246,5 +302,33 @@
   .landing-header {
     padding: 0 30px;
     justify-content: space-between;
+  }
+
+  .landing-home {
+    opacity: 0;
+    animation: 1s ease 1s forwards;
+    animation-name: fadeIn;
+    animation-delay: .4s;
+  }
+  
+  .landing-menu {
+    opacity: 0;
+    animation: 1s ease 1s forwards;
+    animation-name: fadeIn;
+    animation-delay: .5s;
+  }
+  
+  .landing-reserve {
+    opacity: 0;
+    animation: 1s ease 1s forwards;
+    animation-name: fadeIn;
+    animation-delay: .6s;
+  }
+  
+  .landing-contact {
+    opacity: 0;
+    animation: 1s ease 1s forwards;
+    animation-name: fadeIn;
+    animation-delay: .7s;
   }
 }
