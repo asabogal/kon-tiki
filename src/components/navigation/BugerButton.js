@@ -10,7 +10,7 @@ const BugerButton = (props) => {
 
   return (
     <div>
-      <img className="buger-button" src={button} onClick={handleClick}/>
+      <img className="burger-button" src={button} onClick={handleClick}/>
     </div>
   );
 };
