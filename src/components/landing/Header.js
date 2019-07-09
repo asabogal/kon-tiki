@@ -17,6 +17,8 @@ class Header extends Component {
     this.setState({
       isOpen: !this.state.isOpen
     })
+
+    document.querySelector('.landing-img').style.display = 'none'
   }
 
   renderSocial = () => {

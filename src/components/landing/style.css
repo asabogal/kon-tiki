@@ -38,7 +38,8 @@
 }
 
 .navigation div:hover{
-  color: rgb(99, 232, 250);
+  color: rgba(64, 201, 235, 0.884);
+  transform: scale(1.03)
 }
 
 @keyframes fadeIn {
@@ -61,6 +62,7 @@
   animation-delay: 1.5s;
   -webkit-animation: move 1s ease forwards;
   -webkit-animation-delay: 1.5s;
+  z-index: 0;
 }
 
 @keyframes move {
@@ -86,25 +88,33 @@
 .landing-header {
   display: flex;
   justify-content: flex-end;
-  padding-top: 10px;
-  padding-right: 100px;
+  padding: 10px 50px;
   opacity: 0;
   animation: 1s ease 1s forwards;
   animation-name: fadeDown;
   animation-delay: 2s;
   transform: translateY(20%);
+  z-index: 999;
 }
 
 .landing-header a {
   opacity: 0.8;
 }
 
+.burger-button {
+  display: none;
+}
+
+.burger-button:hover {
+  transform: scale(1.1)
+}
+
 @keyframes fadeDown {
-  0% {
+  from {
     opacity: 0;
     transform: translateY(0%);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(20%);
   }
@@ -181,16 +191,28 @@
     display: none;
   }
 
+  .burger-button {
+    display: inline;
+  }
+
   .landing-img {
     animation: none;
     left: 0;
     width: 400px;
+  }
+
+  .landing-header {
+    justify-content: space-between;
   }
 }
 
 @media (max-width: 530px) {
   .navigation {
     display: none;
+  }
+
+  .burger-button {
+    display: inline;
   }
 
   .landing-img {
@@ -202,21 +224,27 @@
 
   .landing-header {
     padding-right: 50px;
+    justify-content: space-between;
   }
 }
 
 @media (max-width: 450px) {
   .navigation {
-    display: none;
+    display: hidden;
+  }
+
+  .burger-button {
+    display: inline;
   }
 
   .landing-img {
     animation: none;
-    width: 250px;
-    height: 250px;
+    width: 350px;
+    height: 300px;
   }
 
   .landing-header {
     padding: 0 30px;
+    justify-content: space-between;
   }
 }
