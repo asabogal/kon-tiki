@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Helmet from 'react-helmet'
+import { HashRouter, Route, Switch } from 'react-router-dom'
 import LandingPage from '../src/pages/LandingPage'
 
 class App extends Component {
@@ -12,7 +13,13 @@ class App extends Component {
           <meta name="keywords" content="kon, tiki, kon-tiki, greenport, restaurant, bar, gallery hotel, gallery, hotel" />
         </Helmet>
 
-      <LandingPage/>
+        <HashRouter basename='/'>
+          <Switch>
+            <Route exact path= '/' component={LandingPage}/>
+    
+            {/* <Route component={PageNotFound}/> */}
+          </Switch>
+        </HashRouter>
 
       </div>
     );

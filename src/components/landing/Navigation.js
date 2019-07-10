@@ -6,10 +6,13 @@ class Navigation extends Component {
   render() {
     return (
       <div className="landing-navigation">
-        <a> <Link to="/">HOME</Link> </a>
-        <a> <Link to="/">MENU</Link> </a>
-        <a> <Link to="/">RESERVE</Link> </a>
-        <a> <Link to="/">CONTACT</Link> </a>
+        <ul>
+          <li> <Link to="/">HOME</Link> </li>
+          <li> <Link to="/">MENU</Link> </li>
+          <li> <Link to="/">RESERVE</Link> </li>
+          <li> <Link to="/">CONTACT</Link> </li>
+        </ul>
+
       </div>
     );
   }

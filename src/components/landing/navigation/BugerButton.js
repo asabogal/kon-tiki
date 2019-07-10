@@ -1,5 +1,5 @@
 import React from 'react'
-import button from '../../resources/icons/burgerButton.png'
+import button from '../../../resources/icons/burgerButton.png'
 import './style.css'
 
 const BugerButton = (props) => {
