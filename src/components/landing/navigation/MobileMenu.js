@@ -7,7 +7,7 @@ const MobileMenu = (props) => {
   const handleClick = () => {
     props.toggle()
     document.querySelector('.landing-img').style.display = 'block'
-    document.querySelector('.navigation').style.display = 'flex'
+    document.querySelector('.landing-navigation').style.display = 'flex'
   }
 
   return (

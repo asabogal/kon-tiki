@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import BugerButton from '../navigation/BugerButton'
-import MobileMenu from '../navigation/MobileMenu'
+import MobileMenu from './navigation/MobileMenu'
 import Navigation from './Navigation'
 import './style.css'
 import instagram from '../../resources/icons/instagram.png'
@@ -19,6 +19,7 @@ class Header extends Component {
     })
 
     document.querySelector('.landing-img').style.display = 'none'
+    document.querySelector('.landing-navigation').style.display = 'none'
   }
 
   renderSocial = () => {
