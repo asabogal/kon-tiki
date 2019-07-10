@@ -1,43 +1,45 @@
-.navigation {
+.landing-navigation {
   display: flex;
   flex-direction: column;
-  font-size: 85px;
   width: 100%;
-  color: #cc6d9cde;
-  /* opacity: 0.8; */
-  animation: flash .3s;
-  animation-delay: 2.3s;
 }
 
-.landing-home {
-  opacity: 0;
-  animation: 1s ease 1s forwards;
-  animation-name: fadeIn;
-  animation-delay: 1.4s;
+.landing-navigation a {
+  font-size: 85px;
+  text-decoration: none;
+  color: #ca5b93de;
+  text-shadow: 1px 2px #174668;
 }
 
-.landing-menu {
+.landing-navigation a:nth-child(1) {
   opacity: 0;
   animation: 1s ease 1s forwards;
   animation-name: fadeIn;
   animation-delay: 1.5s;
 }
 
-.landing-reserve {
+.landing-navigation a:nth-child(2) {
   opacity: 0;
   animation: 1s ease 1s forwards;
   animation-name: fadeIn;
   animation-delay: 1.6s;
 }
 
-.landing-contact {
+.landing-navigation a:nth-child(3) {
   opacity: 0;
   animation: 1s ease 1s forwards;
   animation-name: fadeIn;
   animation-delay: 1.7s;
 }
 
-.navigation div:hover{
+.landing-navigation a:nth-child(4) {
+  opacity: 0;
+  animation: 1s ease 1s forwards;
+  animation-name: fadeIn;
+  animation-delay: 1.8s;
+}
+
+.landing-navigation a:hover {
   color: rgba(64, 201, 235, 0.884);
   transform: scale(1.03)
 }
@@ -45,13 +47,6 @@
 @keyframes fadeIn {
   from {opacity: 0}
 	to {opacity: 1}
-}
-
-@keyframes flash {
-  0% {color: #c26091de}
-  30% {color: #e7c3d6de}
-  60% {color: #c26091de}
-  100% {color: #eecedfde}
 }
 
 .landing-img {
@@ -121,7 +116,7 @@
 }
 
 @media (max-width: 1200px) {
-  .navigation {
+  .landing-navigation a {
     font-size: 75px;
   }
   .landing-img {
@@ -130,7 +125,7 @@
 }
 
 @media (max-width: 1030px) {
-  .navigation {
+  .landing-navigation a {
     font-size: 65px;
   }
   .landing-img {
@@ -139,7 +134,7 @@
 }
 
 @media (max-width: 930px) {
-  .navigation {
+  .landing-navigation a{
     font-size: 62px;
   }
   .landing-img {
@@ -163,7 +158,7 @@
 }
 
 @media (max-width: 910px) {
-  .navigation {
+  .landing-navigation a {
     font-size: 60px;
   }
   .landing-img {
@@ -187,7 +182,7 @@
 }
 
 @media (max-width: 880px) {
-  .navigation {
+  .landing-navigation {
     display: none;
   }
 
@@ -235,7 +230,7 @@
 }
 
 @media (max-width: 530px) {
-  .navigation {
+  .landing-navigation {
     display: none;
   }
 
@@ -285,7 +280,7 @@
 }
 
 @media (max-width: 450px) {
-  .navigation {
+  .landing-navigation {
     display: hidden;
   }
 
