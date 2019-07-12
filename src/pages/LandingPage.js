@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Navigation from '../components/landing/Navigation'
-import LandingImage from '../components/landing/LandingImage'
-import Header from '../components/landing/Header'
+import Navigation from '../components/x-landing/Navigation'
+import LandingImage from '../components/x-landing/LandingImage'
+import Header from '../components/x-landing/Header'
 import './style.css'
 
 class LandingPage extends Component {
